@@ -1,0 +1,21 @@
+:root {
+    --bkg: #121214;
+    --bkg-light: #202024;
+    --text-gray: #737380;
+    --text-white: #fefefe;
+    --head-color: #744ed6;
+    --profile-bar: #04d361;
+
+    --icons: #87868b;
+    
+    --button-confirm: #7159c1;
+
+    --inupt-bkg: #121214;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
