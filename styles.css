@@ -190,3 +190,164 @@ main {
     height: 40px;
     width: 40px;
 }
+.cards {
+    margin-top: 2.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+    padding: 0 0 2rem 0;
+}
+
+.cards .profile {
+    background: var(--bkg-light);
+    border-radius: 5px;
+}
+
+.cards .profile .head-profile {
+    display: flex;
+    align-items: stretch;
+    padding: 2rem;
+}
+
+.cards .profile .head-profile .img-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    height: 128px;
+    width: 128px;
+    flex-shrink: 0;
+}
+
+.cards .profile .head-profile .img-profile img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--text-white);
+    padding: 2px;
+    object-fit: cover;
+    background-size: cover;
+    background-clip: content-box;
+}
+
+.cards .profile .head-profile .text-profile {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.cards .profile .head-profile .text-profile h2 {
+    color: var(--text-white);
+}
+
+.cards .profile .head-profile .text-profile p {
+    color: var(--text-gray-light);
+    margin-top: 1rem;
+}
+
+.cards .profile .head-profile .text-profile button {
+    border: none;
+    border-radius: 5px;
+    color: var(--text-white);
+    background: var(--button-confirm);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    margin-top: 2rem;
+}
+
+.cards .profile .profile-level {
+    border-top: 1px solid var(--bkg);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.cards .profile .profile-level p {
+    color: var(--text-white);
+}
+
+.cards .profile .profile-level span {
+    color:var(--profile-bar);
+    font-weight: 600;
+}
+
+.cards .profile .profile-level .bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cards .profile .profile-level .level-bar {
+    width: 98%;
+    height: 6px;
+    background  : var(--profile-bar);
+}
+
+.cards .profile .profile-level img {
+    height: 21px;
+    width: 21px;
+    color:var(--profile-bar);
+    background: var(--profile-bar);
+    border-radius: 50%;
+    padding: 0.2rem;
+    opacity: 0.9;
+}
+
+.cards .forum-activity {
+    border-radius: 5px;
+    padding: 0 2rem;
+    background: var(--bkg-light);
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.cards .forum-activity .forum-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards .forum-activity .forum-head h3 {
+    color: var(--text-gray);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.cards .forum-activity .forum-head select {
+    color: var(--text-gray);
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 2rem 0.5rem 0.5rem;
+    background: var(--bkg);
+}
+
+.cards .forum-activity .forum-img {
+    display: flex;
+    justify-content: center;
+}
+
+.cards .forum-activity .forum-btn {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cards .forum-activity .forum-btn button {
+    border: 2px solid var(--button-confirm);
+    border-radius: 5px;
+    background: var(--bkg-light);
+    color: var(--text-gray);
+    width: 48%;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem;
+    
+}
