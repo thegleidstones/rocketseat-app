@@ -440,6 +440,14 @@ main {
     gap: 1rem;
 }
 
+.discover .discover-trails .head {
+    color: var(--text-white-2);
+    border: none;
+    text-align: left;
+    width: 100%;
+    margin-top: 2.4rem;
+}
+
 .discover .discover-trails .cards .card {
     border-radius: 5px 5px 0 0;
     padding: 2rem;
@@ -461,6 +469,23 @@ main {
 .discover .discover-trails .cards .card p {
     color: var(--text-gray-light);
     font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.discover .discover-trails .cards .card.ship {
+    border-bottom: 2px solid #e83f5b;
+}
+
+.discover .discover-trails .cards .card.guide {
+    border-bottom: 2px solid #8257e6;
+}
+
+.discover .discover-trails .cards .card.spaceman {
+    border-bottom: 2px solid #04d361;
+}
+
+.discover .discover-trails .cards .card.rocket {
+    border-bottom: 2px solid #fd951f;
 }
 
 .discover .discover-content .cards {
