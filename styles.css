@@ -1,3 +1,4 @@
+/****************** Global ******************/
 :root {
     --bkg: #121214;
     --bkg-light: #202024;
@@ -25,7 +26,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+/****************** Header ******************/
 header {
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     height: 70px;
@@ -33,6 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 header .logo {
@@ -103,6 +108,7 @@ header .avatar img {
     object-fit: cover;
 }
 
+/****************** Main ******************/
 main {
     background: var(--bkg);
 }
@@ -110,8 +116,23 @@ main {
 .content {
     background: var(--bkg);
     max-width: min(90vw, 1110px);
-    min-height: 90vh;    
+    min-height: calc(90vh + 70px);
     margin: auto;
+}
+
+/****************** Init Home, Perfil and Discover ******************/
+
+
+.discover {
+    opacity: 0;
+	visibility: hidden;
+    display: none;
+}
+
+.discover.active {
+    opacity: 1;
+	visibility: visible;
+    display: inline;
 }
 
 .home {
@@ -138,19 +159,10 @@ main {
     display: inline;
 }
 
-.discover {
-    opacity: 0;
-	visibility: hidden;
-    display: none;
-}
 
-.discover.active {
-    opacity: 1;
-	visibility: visible;
-    display: inline;
-}
-
-.content .welcome {
+/****************** Home ******************/
+.content .home .welcome {
+    margin-top: 70px;
     padding: 4rem 0;
     width: 100%;
     display: flex;
@@ -158,27 +170,27 @@ main {
     align-items: center;
 }
 
-.content .welcome .text {
+.content .home .welcome .text {
     display: flex;
     justify-content: space-between;
     align-items: center;   
 }
 
-.content .welcome .text h1 {
+.content .home .welcome .text h1 {
     color: var(--text-white);
     font-size: 2.2rem;
 }
 
-.content .welcome .text .content-text {
+.content .home .welcome .text .content-text {
     color: var(--text-gray-light);
     margin-left: 2.4rem;
 }
 
-.content .welcome .text .content-text p {
+.content .home .welcome .text .content-text p {
     padding: 0.3rem;
 }
 
-.content .welcome .hashtag {
+.content .home .welcome .hashtag {
     color: var(--text-gray);
 }
 
@@ -398,14 +410,8 @@ main {
 }
 
 /****************** Discover ******************/
-.discover {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
 .discover .head {
+    margin-top: 70px;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -431,7 +437,8 @@ main {
 .discover .discover-trails {
     display: flex;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column; 
+    border-bottom: 1px solid var(--bkg-light);   
 }
 
 .discover .discover-trails .cards {
@@ -454,7 +461,8 @@ main {
     background: var(--bkg-light);
 }    
 
-.discover .discover-trails .cards .card img {
+.discover .discover-trails .cards .card img,
+.discover .discover-content .cards .card img {
     height: 80px;
     width: 80px;
     margin-bottom: 2rem;
@@ -488,7 +496,35 @@ main {
     border-bottom: 2px solid #fd951f;
 }
 
+.discover .discover-content .head {
+    color: var(--text-white-2);
+    border: none;
+    text-align: left;
+    width: 100%;
+    margin-top: 2.4rem;
+}
+
 .discover .discover-content .cards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}
+
+.discover .discover-content .cards .card {
+    background: var(--bkg-light);
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.discover .discover-content .cards .card h2 {
+    color: var(--text-white-2);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.discover .discover-content .cards .card p {
+    color: var(--text-gray-light);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
