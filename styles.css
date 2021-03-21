@@ -113,6 +113,63 @@ main {
     background: var(--bkg);
 }
 
+.perfil-bkg {
+    opacity: 0;
+	visibility: hidden;
+    display: none;
+}
+
+.perfil-bkg.active {
+    opacity: 1;
+	visibility: visible;
+    display: inline;
+}
+
+.perfil-bkg .bkg {
+    display: flex;
+    flex-direction: column;    
+    
+    margin-top: 70px;
+    width: 100%;
+    height: 150px;
+    background: var(--head-color);
+}
+
+
+.perfil-bkg .bkg .div-pencil {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(100% - 60px); 
+    padding: 1rem;
+    width: 10px;
+    height: 10px;
+    background: #3f2b7b;
+    border-radius: 5px;
+}
+
+.perfil-bkg .bkg .div-pencil i {
+    font-size: 0.9rem;
+    color: var(--text-white);
+}
+
+.perfil-bkg .bkg .div-dimension {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(100% - 267px);
+    height: 40px;
+    width: 240px;
+    background: #3f2b7b;
+    border-radius: 5px;
+}
+
+.perfil-bkg .bkg .div-dimension span {
+    color: var(--text-gray-light);
+}
+
 .content {
     background: var(--bkg);
     max-width: min(90vw, 1110px);
@@ -478,6 +535,19 @@ main {
     color: var(--text-gray-light);
     font-size: 0.9rem;
     margin-bottom: 2rem;
+}
+
+.discover .discover-trails .cards .card button {
+    font-size: 0.6rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.6rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: #6e4210;
+    color: #fd951f;
 }
 
 .discover .discover-trails .cards .card.ship {
