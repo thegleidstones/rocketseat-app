@@ -2,6 +2,7 @@ const DOM = {
     logo: document.querySelector('div.logo'),
     home: document.querySelector('div.home'),
     perfil: document.querySelector('div.perfil'),
+    perfilBkg: document.querySelector('div.perfil-bkg'),
     discover: document.querySelector('div.discover'),
     linkHome: document.querySelector('a#home'),
     linkPerfil: document.querySelector('a#perfil'),
@@ -14,6 +15,7 @@ const DOM = {
         
         DOM.perfil.classList.remove('active')
         DOM.discover.classList.remove('active')
+        DOM.perfilBkg.classList.remove('active')
         DOM.home.classList.add('active')
     },
 
@@ -21,15 +23,17 @@ const DOM = {
         DOM.linkDiscover.classList.remove('active')
         DOM.linkHome.classList.remove('active')
         DOM.linkPerfil.classList.add('active')
-
+        
         DOM.discover.classList.remove('active')
         DOM.home.classList.remove('active')
         DOM.perfil.classList.add('active')
+        DOM.perfilBkg.classList.add('active')
     },
 
     activeDiscover() {
         DOM.linkPerfil.classList.remove('active')
         DOM.linkHome.classList.remove('active')
+        DOM.perfilBkg.classList.remove('active')
         DOM.linkDiscover.classList.add('active')
 
         DOM.perfil.classList.remove('active')
