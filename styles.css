@@ -691,8 +691,27 @@ main {
 
 .network p {
     margin-top: 1rem;
-    color: var(--text-gray-light);
+    color: var(--text-gray);
     font-size: 0.7rem;
+}
+
+.perfil .left-right .left .interests {
+    margin-top: 1.4rem;
+    padding: 2rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background: var(--bkg-light);
+}
+
+.perfil .left-right .left .interests h2 {
+    color: var(--text-white);
+}
+
+.perfil .left-right .left .interests p {
+    color: var(--text-gray);
+    margin-top: 1.4rem;
+    font-size: 0.8rem;
 }
 
 
