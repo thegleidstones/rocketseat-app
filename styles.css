@@ -835,6 +835,33 @@ main {
     border-right: 0.3px solid var(--text-gray);
 }
 
+/****************** Forum ******************/
+.forum {
+    margin-top: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.forum .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background: var(--bkg-light);
+    padding: 1.5rem;
+}
+
+.forum .card p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+.forum .card h2 {
+    color: var(--text-white-2);
+    font-size: 2.5rem;
+}
+
 /*============================================*/
 /*================= Discover =================*/
 /*============================================*/
