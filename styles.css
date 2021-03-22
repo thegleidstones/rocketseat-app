@@ -568,6 +568,133 @@ main {
     text-transform: uppercase;
 }
 
+.perfil .left-right .left .profile-level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--bkg-light);
+    border-radius: 5px;
+    padding: 2rem;
+
+    margin-top: 1.4rem;
+}
+
+.perfil .left-right .left .profile-level h2,
+.perfil .left-right .left .network h2 {
+    color: var(--text-white);
+}
+
+.perfil .left-right .left .profile-level p {
+    margin-top: 1rem;
+    color: var(--profile-bar);
+}
+
+.perfil .left-right .left .profile-level .bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.perfil .left-right .left .profile-level .bar .level-bar {
+    height: 6px;
+    width: 98%;
+    background: var(--profile-bar);
+}
+
+.perfil .left-right .left .profile-level .bar img {
+    background: var(--profile-bar);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.perfil .left-right .left .network {
+    display: flex;
+    flex-direction: column;
+    background: var(--bkg-light);
+    border-radius: 5px;
+    padding: 2rem;
+
+    margin-top: 1.4rem;
+}
+
+.perfil .left-right .left .network .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.network .head h2,
+.network .head h3 {
+    color: var(--text-white);
+}
+
+.network .head h3 {
+    font-size: 1rem;
+}
+
+.perfil .left-right .left .network .network-img {    
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.img1, 
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7 {
+    height: 48px;
+    width: 48px;
+    margin-left: -19px;
+    border-radius: 50%;
+    border: 2px solid var(--text-white-2);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img1 {
+    background-image: url(./images/profiles/4.jpg);
+} 
+
+.img2 {
+    background-image: url(./images/profiles/5.jpg);
+}
+
+.img3 {
+    background-image: url(./images/profiles/8.jpg);
+}
+
+.img4 {
+    background-image: url(./images/profiles/10.jpg);
+}
+
+.img5 {
+    background-image: url(./images/profiles/11.jpg);
+}
+
+.img6 {
+    background-image: url(./images/profiles/18.jpg);
+}
+
+.img7 {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bkg);
+    color: var(--text-white-2);
+}
+
+.network p {
+    margin-top: 1rem;
+    color: var(--text-gray-light);
+    font-size: 0.7rem;
+}
+
 
 
 .perfil .left-right .right .about {
