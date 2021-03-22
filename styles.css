@@ -14,6 +14,8 @@
     --header-icons: #a8a8b3;
     
     --button-confirm: #7159c1;
+    --button-social: #29292e;
+    --button-social-hover: #3c3c41;
 
     --inupt-bkg: #121214;
 }
@@ -69,19 +71,19 @@ header .navigation a.active {
     border-bottom: 2px solid var(--head-color);
 }
 
-header .user {
+header .user-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .user .tools i {
+header .user-nav .tools i {
     color: var(--header-icons);
     font-size: 1.2rem;
     padding: 1rem;
 }
 
-header .user .tools i:last-child {
+header .user-nav .tools i:last-child {
     margin-right: 1rem;
 }
 
@@ -178,8 +180,6 @@ main {
 }
 
 /****************** Init Home, Perfil and Discover ******************/
-
-
 .discover {
     opacity: 0;
 	visibility: hidden;
@@ -216,8 +216,9 @@ main {
     display: inline;
 }
 
-
-/****************** Home ******************/
+/*============================================*/
+/*=================== Home ===================*/
+/*============================================*/
 .content .home .welcome {
     margin-top: 70px;
     padding: 4rem 0;
@@ -485,7 +486,8 @@ main {
     flex-direction: column;
 }
 
-.perfil .left-right .left .me {
+/******************* User *******************/
+.user {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -496,7 +498,7 @@ main {
     border-radius: 5px 5px 0 0;
 }
 
-.perfil .left-right .left .me i {
+.user i {
     padding: 0.8rem;
     margin-top: 1rem;
     margin-left: calc(100% - 60px);
@@ -504,19 +506,19 @@ main {
     transition: 0.2s;
 }
 
-.perfil .left-right .left .me i:hover {
+.user i:hover {
     border-radius: 5px;
     background: var(--bkg);
 }
 
-.perfil .left-right .left .me .img-me {
+.user .user-img {
     position: relative;
     width: 170px;
     height: 170px;
     flex-shrink: 0;
 }
 
-.perfil .left-right .left .me .img-me img {
+.user .user-img img {
     top: 0;
     left: 0;
     width: 100%;
@@ -528,30 +530,31 @@ main {
     object-fit: cover;
 }
 
-.perfil .left-right .left .me h2 {
+.user h2 {
     margin-top: 1rem;
     color: var(--text-white);
 }
-.perfil .left-right .left .me p {
+.user p {
     margin-top: 1.3rem;
     width: 250px;
     text-align: center;
     color: var(--text-white);
 }
 
-.perfil .left-right .left .me p i {
+.user p i {
     padding: 0;
     margin-top: 0;
     margin-left: 0;
     color: var(--text-gray-light);
 }
 
-.perfil .left-right .left .me .techs {
+.user .techs {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.perfil .left-right .left .since {
+/******************* Since *******************/
+.since {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -561,7 +564,7 @@ main {
     border-radius: 0 0 5px 5px;
 }
 
-.perfil .left-right .left .since p {
+.since p {
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--text-gray);
@@ -609,7 +612,8 @@ main {
     border-radius: 50%;
 }
 
-.perfil .left-right .left .network {
+/****************** Network ******************/
+.network {
     display: flex;
     flex-direction: column;
     background: var(--bkg-light);
@@ -619,7 +623,7 @@ main {
     margin-top: 1.4rem;
 }
 
-.perfil .left-right .left .network .head {
+.network .head {
     display: flex;
     justify-content: space-between;
 }
@@ -633,7 +637,7 @@ main {
     font-size: 1rem;
 }
 
-.perfil .left-right .left .network .network-img {    
+.network .network-img {    
     margin-top: 1rem;
     margin-left: 1rem;
     display: flex;
@@ -695,7 +699,8 @@ main {
     font-size: 0.7rem;
 }
 
-.perfil .left-right .left .interests {
+/****************** Interests ******************/
+.interests {
     margin-top: 1.4rem;
     padding: 2rem;
     border-radius: 5px;
@@ -704,28 +709,76 @@ main {
     background: var(--bkg-light);
 }
 
-.perfil .left-right .left .interests h2 {
+.interests h2 {
     color: var(--text-white);
 }
 
-.perfil .left-right .left .interests p {
+.interests p {
     color: var(--text-gray);
     margin-top: 1.4rem;
     font-size: 0.8rem;
 }
 
-
-
-.perfil .left-right .right .about {
+/****************** About ******************/
+.about {
     width: 100%;
-    height: 200px;
     background: var(--bkg-light);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.about .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .head h2 {
+    color: var(--text-white);
+}
+
+.about .head i {
+    margin-top: -2rem;
+    margin-right: -1.4rem;
+    padding: 0.8rem;
+    color: var(--text-gray);
+    font-size: 1rem;
+}
+
+.about .head i:hover {
+    background: var(--bkg);
     border-radius: 5px;
 }
 
+.about p {
+    margin-top: 1rem;
+    color: var(--text-white);
+}
 
+.about .buttons {
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 1rem;
+}
 
-/****************** Discover ******************/
+.about .buttons button {
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--button-social);
+    color: var(--text-white);
+    transition: 0.2s;
+}
+
+.about .buttons button:hover {
+    background: var(--button-social-hover);
+}
+
+/*============================================*/
+/*================= Discover =================*/
+/*============================================*/
 .discover .head {
     margin-top: 70px;
     padding: 1rem;
