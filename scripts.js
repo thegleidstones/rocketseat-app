@@ -7,6 +7,20 @@ const DOM = {
     linkHome: document.querySelector('a#home'),
     linkPerfil: document.querySelector('a#perfil'),
     linkDiscover: document.querySelector('a#discover'),
+    divFullYear: document.querySelector('div.full-year'),
+
+    addDays() {
+        this.divFullYear.innerHTML = ""
+
+        for(let i = 0; i <= 202; i++) {
+            const div = document.createElement('div')
+            div.classList.add('squad')
+            div.classList.add('gray')
+
+            DOM.divFullYear.appendChild(div)
+        }
+
+    },
     
     activeHome() {
         DOM.linkPerfil.classList.remove('active')
@@ -28,6 +42,8 @@ const DOM = {
         DOM.home.classList.remove('active')
         DOM.perfil.classList.add('active')
         DOM.perfilBkg.classList.add('active')
+
+        DOM.addDays()
     },
 
     activeDiscover() {
