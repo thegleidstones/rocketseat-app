@@ -6,12 +6,19 @@
     --text-gray-light: #a8a8b3;
     --text-white: #fefefe;
     --text-white-2: #e1e1e6;
-    --head-color: #744ed6;
+    --head-color: #744ed6;    
     --profile-bar: #04d361;
     --gradient-right: #2d264a;
 
     --icons: #87868b;
     --header-icons: #a8a8b3;
+
+    --white: #fff;
+    --white2: #dad4ef;
+    --purple:#b7aae6;
+    --purple1:#937fd5;
+    --purple2: #8257e5;
+    --gray: #282832;
     
     --button-confirm: #7159c1;
     --button-social: #29292e;
@@ -860,6 +867,124 @@ main {
 .forum .card h2 {
     color: var(--text-white-2);
     font-size: 2.5rem;
+}
+
+/****************** Perfil-History ******************/
+.perfil-history {
+    margin-top: 1.4rem;
+    padding: 2rem;
+    border-radius: 5px;
+    background: var(--bkg-light);
+    width: 100%;
+}
+
+.perfil-history .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil-history .head h2 {
+    color: var(--text-white);
+}
+
+.perfil-history .head p {
+    color: var(--text-gray-light);
+}
+
+.squad {
+    height: 15px;
+    width: 15px;
+    border: 1px solid transparent;
+}
+
+.squad:hover {
+    opacity: 0.8;
+    border: 1px solid var(--text-gray);
+}
+
+.white {
+    background: var(--white);
+}
+
+.white2 {
+    background: var(--white2);
+}
+
+.purple {
+    background: var(--purple);
+}
+
+.purple1 {
+    background: var(--purple1);
+}
+
+.purple2 {
+    background: var(--purple2);
+}
+
+.gray {
+    background: var(--gray);
+}
+
+.perfil-history .head .legend {
+    width: 110px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil-history .history-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-history .history-content .head {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.week p {
+    margin-top: 1rem;
+}
+
+.full-year {
+    display: grid;
+    grid-template-columns: repeat(29, 1fr);
+    gap: 0.2rem;
+}
+
+.month {
+    margin-top: 1rem;
+    margin-left: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.month p {
+    color: var(--text-gray-light);
+}
+
+/****************** Activities ******************/
+.activities {
+    background: var(--bkg-light);
+    border-radius: 5px;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.activities h2 {
+    color: var(--white);    
+}
+
+.activities p {
+    margin-top: 2rem;
+    color: var(--text-gray);
+    font-size: 0.9rem;
 }
 
 /*============================================*/
