@@ -847,6 +847,10 @@ main {
     gap: 0.5rem;
 }
 
+.technologies .cards .card .techs .react {
+    filter: hue-rotate(30deg)
+}
+
 .technologies .cards .card:first-child {
     border-right: 0.3px solid var(--text-gray);
 }
@@ -1232,7 +1236,6 @@ main {
         height: 87px;
         width: 87px;
     }
-
 }
 
 @media (max-width: 600px) {
@@ -1271,6 +1274,169 @@ main {
     }
 }
 
+/****************** Perfil ******************/
+@media (max-width: 1050px) {
+    .perfil-bkg .bkg {
+        display: flex;
+        flex-direction: initial;
+    }
+
+    .perfil-bkg .bkg .items {
+        display: flex;
+        justify-content: stretch;
+        margin-left: calc(100% - 330px);
+        padding: 1rem;
+    }
+
+    .perfil .left-right {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .perfil-bkg .bkg .div-pencil,
+    .perfil-bkg .bkg .div-dimension {
+        margin: 0;
+    }
+
+    .perfil-bkg .bkg .div-pencil {        
+        height: 40px;
+        width: 40px;
+        margin-right: 1rem;
+    }
+
+    .squad {
+        height: 16px;
+        width: 16px;
+        border: 1px solid transparent;
+    }
+    .full-year {
+        gap: 0.3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .technologies .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .technologies .cards .card:nth-child(2) {
+        border-right: none;
+    }
+
+    .technologies .cards .card .techs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .squad {
+        height: 15px;
+        width: 15px;
+        border: 1px solid transparent;
+    }
+    .full-year {
+        gap: 0.2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .squad {
+        height: 13px;
+        width: 13px;
+        border: 1px solid transparent;
+    }
+    .full-year {
+        gap: 0.15rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .technologies .cards .card .techs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .perfil-history .head p {
+        font-size: 0.8rem;
+    }
+
+    .month {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .squad {
+        height: 11px;
+        width: 11px;
+        border: 1px solid transparent;
+    }
+
+    .full-year {
+        gap: 0.1rem;
+    }
+
+    .forum {
+        grid-template-columns: 100%;
+    }
+
+    .forum .card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .perfil-bkg .bkg .items {
+        margin-left: calc(100% - 80px);
+    }
+
+    .perfil-bkg .bkg .div-dimension {
+        opacity: 0  ;
+        visibility: hidden;
+        display: none;
+    }
+
+    .perfil-bkg .bkg .div-pencil {   
+        margin: 0;
+    }
+
+    .technologies .cards {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 0.25rem;
+    }
+
+    .technologies .cards .card {
+        padding: 0.5rem;
+    }
+
+    .perfil-history .head p {
+        font-size: 0.7rem;
+    }
+
+    .month {
+        font-size: 0.7rem;
+    }
+
+    .squad {
+        height: 10px;
+        width: 10px;
+        border: 1px solid transparent;
+    }
+
+    .full-year {
+        gap: 0.09rem;
+    }
+
+    .technologies .cards .card .techs {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .technologies .cards .card:first-child{
+        border-right: none;
+    }
+}
 
 /****************** Discover ******************/
 @media (max-width: 950px) {
