@@ -49,6 +49,17 @@ header {
     z-index: 100;
 }
 
+header .full-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .full-logo h2 {
+    color: var(--text-gray-light);
+    font-family: 'Dancing Script';
+}
+
 header .logo {
     cursor: pointer;
     display: flex;
